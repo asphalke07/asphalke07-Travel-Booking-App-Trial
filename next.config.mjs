@@ -17,7 +17,15 @@ const nextConfig = {
         remotePatterns:[
             {hostname:"imgcld.yatra.com"},
         ]
-    }
+    },
+    async rewrites() {
+        return [
+          {
+            source: '/api/:path*',
+            destination: '/api/:path*', // Proxy to API routes
+          },
+        ];
+      },
 };
 
 export default nextConfig;
