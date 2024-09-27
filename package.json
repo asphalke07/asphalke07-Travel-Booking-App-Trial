@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && npx prisma generate",
-    "postbuild": "prisma generate",
+    "postbuild": "npx prisma generate",
     "start": "next start",
-    "lint": "next lint"
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.2",
