@@ -1,0 +1,13 @@
+{
+    "build": {
+      "env": {
+        "NEXT_PUBLIC_STRIPE_PUBLIC_KEY": "pk_test_51Q0jVLRuuRn1FQJrrSjU6z8KAFZnanSHfXctjhTFw2r0RUoKulCmTaN9r00AYo2LCJiw52MEv0qOvX2fA2IlOkuW00qKef91k3",
+        "DATABASE_URL": "postgres://default:XOMhRQ4CtEg6@ep-raspy-rice-a1r9r6cw-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+      },
+      "commands": {
+        "build": "npm run build",
+        "postbuild": "npx prisma generate"
+      }
+    }
+  }
+  
